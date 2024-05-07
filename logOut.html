@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log Out page</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <script src="isLogin.js"></script>
+</head>
+
+<body>
+    <!---------- Header  ------------->
+
+    <section class="sub-header" style="background: url(imgages/backgroundsunmountain.jpg);">
+        <nav>
+            <a href="home.html"><img src="imgages/logo.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i id="menu" class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="home.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="course.html">COURSE</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                    <li><a href="logOut.html">LOG OUT</a></li>
+                </ul>
+            </div>
+            <i id="menu" class="fa-solid fa-bars" onclick="showMenu()"></i>
+        </nav>
+        
+    </section>
+    
+    <!----------- log out  ------------>
+    <div class="background"></div>
+    <div class="container">
+        <div class="content">
+            <div class="text-sci">
+                <h1 style="padding-bottom: 30px;">Log Out</h1>
+                <h2>Thank you! <br><span>For visiting our Website.</span></h2>
+                
+                <p>You've successfully logged out. Thank you for visiting our website.<br>Feel free to explore more of our content or log back in anytime to continue your experience.<br>We look forward to welcoming you back soon!</p>
+                
+                <button id="logout-btn" class="hero-btn red-btn">LOG OUT</a>
+
+            </div>
+        </div>
+    </div>    
+
+    <!---------- Footer ------------>
+
+    <section class="footer">            
+        <h4>About Us</h4>
+        <p>Explore "College Enquiry ChatBot" further by navigating through our diverse range of pages. Stay connected with us on social media for the latest updates and announcements.<br>For any inquiries or feedback, feel free to reach out to our dedicated support team at [enquirychatbot@gmail.com]. Your satisfaction is our priorty, and we're here to assist you every step of the way.</p>
+        <div class="icons">
+            <i id="icons" class="fa-brands fa-facebook"></i>
+            <i id="icons" class="fa-brands fa-twitter"></i>
+            <i id="icons" class="fa-brands fa-instagram"></i>
+            <i id="icons" class="fa-brands fa-linkedin"></i>            
+        </div>
+            <p><i id="icons" class="fa-regular fa-copyright"></i> All copyrights are reseverd</p>
+    </section>
+    
+    <!-- JavaScript for Toggle Menu -->
+    
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        const logOutBtn = document.getElementById("logout-btn")
+
+        logOutBtn.addEventListener("click", (e) => {
+            localStorage.removeItem("accessToken")
+
+            window.location.href = "/"
+        })
+
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+    </script>    
+</body>
+</html> 

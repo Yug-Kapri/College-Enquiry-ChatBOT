@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>College Blogpage</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <script src="isLogin.js"></script>
+  </head>
+  <body>
+    <!---------- Header  ------------->
+
+    <section class="sub-header">
+      <nav>
+        <a href="home.html"><img src="imgages/logo.png" /></a>
+        <div class="nav-links" id="navLinks">
+          <i id="menu" class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+          <ul>
+            <li><a href="home.html">HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="course.html">COURSE</a></li>
+            <li><a href="blog.html">BLOG</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+            <li><a href="logOut.html">LOG OUT</a></li>
+          </ul>
+        </div>
+        <i id="menu" class="fa-solid fa-bars" onclick="showMenu()"></i>
+      </nav>
+      <h1>Our Certificates & Online Programs For 2024</h1>
+    </section>
+
+    <!----------- blog page content  ----------->
+
+    <section class="blog-content">
+      <div class="row">
+        <div class="blog-left">
+          <img src="imgages/certificate.jpg" />
+          <h2>Our Certificates & Online Programs For 2024</h2>
+          <p>Even with the advances in science and technology, many people lagged behind and were not able to cope with the pace of growth in many places around the world. Most were unaware of the benefits of online education or of the existence of online classes in various countries. Just like every coin has two sides, there are two sides to online classes as well. Online classes are beneficial to continue our education despite various barriers. But online activities have the chance to digress into other addictive online activities at times when it comes to kids. Excess of anything is dangerous; therefore, investing too much time can harm the kids. Thus, parents should be responsible enough to take care of their children during online classes.</p>
+          <br />
+          <p>Online classes are the new modes of learning which have brought about a revolution in the education system. Online classes have been existing in various countries, but their importance increased only during the pandemic. A lot of colleges and universities never accepted a degree certificate that was earned after attending classes online, but now, with the changing time, many renowned colleges and universities have accepted online courses and have shifted to the online method of learning. Online classes have been more accessible and accepted by students as well as teachers. We connect with different people from around the world through online classes, which makes students more competent and engaging. Students have become smarter and technologically sound with online classes, and it has also helped teachers to be more technologically sound. With the growing demand for online classes, education has become more comforting and more satisfying. Even with a hundred barriers, people have accepted online learning methods to continue their education. It has been noticed that student’s performance has improved due to online classes, which is why most students have accepted online learning methods. There was a time when girls were not allowed to go to college to attend classes, and there were many restrictions to choosing a course, but with the increasing demand for online classes, there are no more limitations to education. The students now have all the freedom to choose any course of their choice and build their careers as per their choice. Therefore, online education has been a great help and revolution in today’s learning system.</p>
+          <br />
+          <p>Ed-tech platforms are now helping students as well as teachers with different study materials, various online courses, etc., at a very reasonable cost so that education can be accessible and available to all grades of students. Online classes help students and teachers excel academically even better than offline classes because they get their own space for learning.</p>
+          <br />
+          <p>It is a versatile method of learning which helps connect with people from various parts of the globe, which was not possible in offline classes. Students were given their comfort zone to study, resulting in better performance and productivity. It reduced a lot of paperwork, ultimately saving mother earth. Many renowned institutions have changed their learning methods to online methods because it made education more accessible.</p>
+          <div class="comment-box">
+            <h3>Leave a Comment</h3>
+            <form class="comment-form" method="post" id="comment-form">
+              <input type="text" placeholder="Enter Name" name="name" />
+              <input type="email" placeholder="Enter Email" name="email" />
+              <textarea
+                rows="5"
+                placeholder="Your Comment"
+                name="comment"
+              ></textarea>
+              <button type="submit" class="hero-btn red-btn">
+                POST COMMENT
+              </button>
+            </form>
+          </div>
+        </div>
+        <div class="blog-right">
+          <h3>Post Categories</h3>
+          <div>
+            <span>Business Analytics</span>
+            <span>44</span>
+          </div>
+          <div>
+            <span>Data Science</span>
+            <span>31</span>
+          </div>
+          <div>
+            <span>Machine Learning</span>
+            <span>28</span>
+          </div>
+          <div>
+            <span>Computer Science</span>
+            <span>56</span>
+          </div>
+          <div>
+            <span>Cybersecurity</span>
+            <span>22</span>
+          </div>
+          <div>
+            <span>Software Development</span>
+            <span>42</span>
+          </div>
+          <div>
+            <span>Android App Development</span>
+            <span>30</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!---------- Footer ------------>
+
+    <section class="footer">
+      <h4>About Us</h4>
+      <p>Explore "College Enquiry ChatBot" further by navigating through our diverse range of pages. Stay connected with us on social media for the latest updates and announcements.<br>For any inquiries or feedback, feel free to reach out to our dedicated support team at [enquirychatbot@gmail.com]. Your satisfaction is our priorty, and we're here to assist you every step of the way.</p>
+      <div class="icons">
+        <i id="icons" class="fa-brands fa-facebook"></i>
+        <i id="icons" class="fa-brands fa-twitter"></i>
+        <i id="icons" class="fa-brands fa-instagram"></i>
+        <i id="icons" class="fa-brands fa-linkedin"></i>
+      </div>
+      <p><i id="icons" class="fa-regular fa-copyright"></i> All copyrights are reseverd</p>
+    </section>
+
+    <!-- JavaScript for Toggle Menu -->
+    <script>
+      var navLinks = document.getElementById("navLinks");
+
+      function showMenu() {
+        navLinks.style.right = "0";
+      }
+
+      function hideMenu() {
+        navLinks.style.right = "-200px";
+      }
+
+      // JavaScript for adding comment
+      document
+        .getElementById("comment-form")
+        .addEventListener("submit", async (e) => {
+          e.preventDefault();
+
+          const formData = Object.fromEntries(new FormData(e.target).entries());
+
+          fetch("http://localhost:3000/api/comments", {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify(formData),
+          })
+            .then((res) => res.json())
+            .then((data) => {
+              if (data.success) {
+                alert("Comment added successfully");
+              } else {
+                alert("Error adding comment");
+              }
+            })
+            .catch((err) => {
+              alert("Error adding comment");
+            });
+        });
+    </script>
+  </body>
+</html>

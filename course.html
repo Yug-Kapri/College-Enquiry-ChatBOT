@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Coursepage</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <script src="isLogin.js"></script>
+</head>
+<body>
+    <!---------- Header  ------------->
+
+    <section class="sub-header">
+        <nav>
+            <a href="home.html"><img src="imgages/logo.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i id="menu" class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="home.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="course.html">COURSE</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                    <li><a href="logOut.html">LOG OUT</a></li>
+                </ul>
+            </div>
+            <i id="menu" class="fa-solid fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>Our Courses</h1>
+    </section>
+
+        <!---------  Course  ---------->
+
+        <section class="course">
+        <h1>Courses We Offer</h1>
+        <p>We offer diverse range of courses tailored to meet varios interests and career goals.</p>
+
+        <div class="row">
+            <div class="course-column">
+                <h3>B.Tech in Computer Engineering</h3>
+                <p>B Tech IT is a four-year bachelor’s degree course in Information Technology. It deals with information security, database, and network management, computer technical support, and commercial software development. In other words, it focuses on computer management rather than computing. This program seeks to provide in-depth knowledge to develop a pool of research personnel with experience in information technology.</p>
+            </div>
+            <div class="course-column">
+                <h3>Bachelor Of Computer Applications</h3>
+                <p>A Bachelor of Computer Application degree is the core of Computer Science in today’s world. BCA is a three-year degree program. This degree is for those who want to study computer science, software engineering, information technology, information security, and networking technology. The degree focuses on the design, development, and deployment of software with a special focus on the design and analysis of software security.</p>
+            </div>
+             <div class="course-column">
+                <h3>Master Of Computer Applications</h3>
+                <p>MCA stands for Master of Computer Applications. It is a two-year postgraduate program that focuses on computer applications. The course is designed to provide students with the knowledge and skills that are required to develop and implement computer applications. MCA is a popular choice for students who want to pursue a career in the IT industry. It is a sought-after course after completing BCA</p>
+            </div>
+        </div>
+    </section>
+   
+    <!------------ Facilities  ------------>
+
+    <section class="facilities">
+        <h1>Our Facilities</h1>
+        <p>Our campus boasts modern and comprehensive facilitiies designed to support every aspect of student life and learning.</p>
+
+        <div class="row">
+            <div class="facilities-column">
+                <img src="imgages/library.png">
+                <h3>World Class Library</h3>
+                <p>Our library stands as a beacon of knowledge, offering access to a vast array of resources from around the globe. Stocked with an extensive collection of books, journals and multimedia materials.</p>
+            </div>
+            <div class="facilities-column">
+                <img src="imgages/basketball.png">
+                <h3>Largest Play Ground</h3>
+                <p>Our campus boasts the largest playground in the region, providing ample space for students to engage in physical activity, sports, and recreation. Our playground offers a variety of facilities including soccer fields, basketball courts, tennis courts and more.</p>
+            </div>
+            <div class="facilities-column">
+                <img src="imgages/cafeteria.png">
+                <h3>Cafeteria</h3>
+                <p>Our cafeteria is a vibrant hub of culinary delights, offering a diverse selection of freshly prepared meals with quality, taste and nutrition our experienced chefs craft delicious dishes using locally sourced ingredients whenever possible.</p>
+            </div>
+        </div>
+    </section>
+    
+        <!---------- Footer ------------>
+
+        <section class="footer">
+            <h4>About Us</h4>
+            <p>Explore "College Enquiry ChatBot" further by navigating through our diverse range of pages. Stay connected with us on social media for the latest updates and announcements.<br>For any inquiries or feedback, feel free to reach out to our dedicated support team at [enquirychatbot@gmail.com]. Your satisfaction is our priorty, and we're here to assist you every step of the way.</p>
+            <div class="icons">
+                <i id="icons" class="fa-brands fa-facebook"></i>
+                <i id="icons" class="fa-brands fa-twitter"></i>
+                <i id="icons" class="fa-brands fa-instagram"></i>
+                <i id="icons" class="fa-brands fa-linkedin"></i>
+            </div>
+            <p><i id="icons" class="fa-regular fa-copyright"></i> All copyrights are reseverd</p>
+        </section>
+    
+        <!-- JavaScript for Toggle Menu -->
+        <script>
+            var navLinks = document.getElementById("navLinks");
+    
+            function showMenu() {
+                navLinks.style.right = "0";
+            }
+    
+            function hideMenu() {
+                navLinks.style.right = "-200px";
+            }
+        </script>
+    </body>
+    </html>

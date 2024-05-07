@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Aboutpage</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <script src="isLogin.js"></script>
+</head>
+<body>
+    <!---------- Header  ------------->
+
+    <section class="sub-header">
+        <nav>
+            <a href="home.html"><img src="imgages/logo.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i id="menu" class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="home.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="course.html">COURSE</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                    <li><a href="logOut.html">LOG OUT</a></li>
+                </ul>
+            </div>
+            <i id="menu" class="fa-solid fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>About Us</h1>
+    </section>
+
+        <!---------  about us content  ---------->
+
+        <section class="about-us">
+            <div class="row">
+                <div class="about-column">
+                    <h1>We are the World's Largest University</h1>
+                    <p>We are dedicated to  providing an exceptional educational experience that students for success in their academic, professional and personal endeavors.<br>Since our establishment, we have been committed to fostering a vibrant learning community and empowering our students to achieve their full potential.<br>We take pride in our rigorous academic programs taught by renowened faculty members who are experts in their fields.</p>
+                    <a href="home.html" class="hero-btn red-btn">EXPLORE NOW</a>
+                </div>
+                <div class="about-column">
+                    <img src="imgages/about.jpg">
+                </div>
+            </div>
+        </section>
+
+        <!---------- Footer ------------>
+
+        <section class="footer">
+            <h4>About Us</h4>
+            <p>Explore "College Enquiry ChatBot" further by navigating through our diverse range of pages. Stay connected with us on social media for the latest updates and announcements.<br>For any inquiries or feedback, feel free to reach out to our dedicated support team at [enquirychatbot@gmail.com]. Your satisfaction is our priorty, and we're here to assist you every step of the way.</p>
+            <div class="icons">
+                <i id="icons" class="fa-brands fa-facebook"></i>
+                <i id="icons" class="fa-brands fa-twitter"></i>
+                <i id="icons" class="fa-brands fa-instagram"></i>
+                <i id="icons" class="fa-brands fa-linkedin"></i>
+            </div>
+            <p><i id="icons" class="fa-regular fa-copyright"></i> All copyrights are reseverd</p>
+        </section>
+    
+        <!-- JavaScript for Toggle Menu -->
+        <script>
+            var navLinks = document.getElementById("navLinks");
+    
+            function showMenu() {
+                navLinks.style.right = "0";
+            }
+    
+            function hideMenu() {
+                navLinks.style.right = "-200px";
+            }
+        </script>
+    </body>
+    </html>

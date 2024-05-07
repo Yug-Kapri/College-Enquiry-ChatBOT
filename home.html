@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Homepage</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="Chatbot/style/chat.css">
+    <link rel="stylesheet" href="Chatbot/style/home.css">
+    <script src="isLogin.js"></script>
+</head>
+<body>
+    <!------------ Header ----------->
+    
+    <section class="header">
+        <nav>
+            <a href="home.html"><img src="imgages/logo.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i id="menu" class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="home.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="course.html">COURSE</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                    <li><a href="logOut.html">LOG OUT</a></li>
+                </ul>
+            </div>
+            <i id="menu" class="fa-solid fa-bars" onclick="showMenu()"></i>
+        </nav>
+    
+    <div class="text-box">
+        <h1>World's Largest University</h1>
+        <p>Welcome to our University, where academic excellence meets vibrant campus life. As a premier institution dedicated to fostering innovation, critical thinking, and global citizenship<br>we provide a dynamic learning enviornment for students to thrive. Our diverse community of scholars, coupled with state-of-the-art facilities and cutting-edge research opportunities, empowers students to explore their passions and realize their full potential. Whether you're embarking on your indergraduate journey or pusuing advanced studies.<br>Our University is committed to nurturing your intellectual growth and preparing you for success in an ever-changing world.</p> 
+        <a class="hero-btn">Visit Us to know more</a>
+    </div>    
+
+    </section>
+
+    <!-------------- Chat-Bot  ---------------->
+    
+     <!-- CHAT BAR BLOCK  -->
+     <div class="chat-bar-collapsible">
+        <button id="chat-button" type="button" class="collapsible">Chat with us!
+            <i id="chat-icon" style="color: #fff;"  class="fa-regular fa-comments"></i>
+        </button>
+
+        <div class="content">
+            <div class="full-chat-block">
+                <!-- Message Container -->
+                <div class="outer-container">
+                    <div class="chat-container">
+                        <!-- Messages -->
+                        <div id="chatbox">
+                            <h5 id="chat-timestamp"></h5>
+                            <p id="botStarterMessage" class="botText"><span>Loading...</span></p>
+                        </div>
+
+                        <!-- User Input box -->
+                        <div class="chat-bar-input-block">
+                            <div id="userInput">
+                                <input id="textInput" class="input-box" type="text" name="msg" 
+                                placeholder="Tap 'Enter to send a message">
+                                <p></p>
+                            </div>
+
+                            <div class="chat-bar-icons">
+                                <i id="chat-icon" style="color: crimson;" class="fa-solid fa-heart"
+                                onclick="heartButton()"></i>
+                                <i id="chat-icon" style="color: #333;"  class="fa-solid fa-paper-plane" 
+                                onclick="sendButton()"></i>
+                            </div>
+                        </div>
+
+                        <div id="chat-bar-bottom">
+                            <p></p>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+    <!------------- Course ---------------->
+    
+    <section class="course">
+        <h1>Courses We Offer</h1>
+        <p>We offer diverse range of courses tailored to meet varios interests and career goals.</p>
+
+        <div class="row">
+            <div class="course-column">
+                <h3>B.Tech in Computer Engineering</h3>
+                <p>B Tech IT is a four-year bachelor’s degree course in Information Technology. It deals with information security, database, and network management, computer technical support, and commercial software development. In other words, it focuses on computer management rather than computing. This program seeks to provide in-depth knowledge to develop a pool of research personnel with experience in information technology.</p>
+            </div>
+            <div class="course-column">
+                <h3>Bachelor Of Computer Applications</h3>
+                <p>A Bachelor of Computer Application degree is the core of Computer Science in today’s world. BCA is a three-year degree program. This degree is for those who want to study computer science, software engineering, information technology, information security, and networking technology. The degree focuses on the design, development, and deployment of software with a special focus on the design and analysis of software security.</p>
+            </div>
+             <div class="course-column">
+                <h3>Master Of Computer Applications</h3>
+                <p>MCA stands for Master of Computer Applications. It is a two-year postgraduate program that focuses on computer applications. The course is designed to provide students with the knowledge and skills that are required to develop and implement computer applications. MCA is a popular choice for students who want to pursue a career in the IT industry. It is a sought-after course after completing BCA</p>
+            </div>
+        </div>
+    </section>
+
+    <!----------- Campus --------->
+
+    <section class="campus">
+        <h1>Our Global Campus</h1>
+        <p>Our global campus fosters cross-cultural understanding, preparing students to navigate today's interconnected world.</p>
+
+        <div class="row">
+            <div class="campus-column">
+                <img src="imgages/london.png">
+                <div class="layer">
+                    <h3>LONDON</h3>
+                </div>
+            </div>
+            <div class="campus-column">
+                <img src="imgages/newyork.png">
+                <div class="layer">
+                    <h3>NEW YORK</h3>
+                </div>
+            </div>
+            <div class="campus-column">
+                <img src="imgages/washington.png">
+                <div class="layer">
+                    <h3>WASHINGTON</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!----------------------- Facilities ------------------------------>
+
+    <section class="facilities">
+        <h1>Our Facilities</h1>
+        <p>Our campus boasts modern and comprehensive facilitiies designed to support every aspect of student life and learning.</p>
+
+        <div class="row">
+            <div class="facilities-column">
+                <img src="imgages/library.png">
+                <h3>World Class Library</h3>
+                <p>Our library stands as a beacon of knowledge, offering access to a vast array of resources from around the globe. Stocked with an extensive collection of books, journals and multimedia materials.</p>
+            </div>
+            <div class="facilities-column">
+                <img src="imgages/basketball.png">
+                <h3>Largest Play Ground</h3>
+                <p>Our campus boasts the largest playground in the region, providing ample space for students to engage in physical activity, sports, and recreation. Our playground offers a variety of facilities including soccer fields, basketball courts, tennis courts and more.</p>
+            </div>
+            <div class="facilities-column">
+                <img src="imgages/cafeteria.png">
+                <h3>Cafeteria</h3>
+                <p>Our cafeteria is a vibrant hub of culinary delights, offering a diverse selection of freshly prepared meals with quality, taste and nutrition our experienced chefs craft delicious dishes using locally sourced ingredients whenever possible.</p>
+            </div>
+        </div>
+    </section>
+    
+    <!--------------- Testimonials  -------------------->
+
+    <section class="testimonials">
+        <h1>What Our Student Says</h1>
+        <p>Listen to what our students have to say about their experiences at our College campuses. Read their testimonials and see why our University is the right choice for your academic journey.</p>
+
+        <div class="row">
+            <div class="testimonial-column">
+                <img src="imgages/user1.jpg">
+                <div>
+                    <p>I would like to thank and give all credit to principal, teachers, and the staff, who are so committed, dedicated and hard working for making this college a heaven of knowledge and joy for students and giving me the beautiful memories of pleasant experience of studying in this college.</p>
+                    <h3>Christine Berkley</h3>
+                    <i id="star" class="fa-solid fa-star"></i>
+                    <i id="star" class="fa-solid fa-star"></i>
+                    <i id="star" class="fa-solid fa-star"></i>
+                    <i id="star" class="fa-solid fa-star"></i>
+                    <i id="star" class="fa-regular fa-star"></i>
+                </div>
+            </div>
+            <div class="testimonial-column">
+                <img src="imgages/user2.jpg">
+                <div>
+                    <p>I express my gratitude towards University and teachers for enabling me to establish a firm groundwork in engineering, refine my technical proficiencies, and offer me an internship opportunity where I can put my knowledge and skills to practical use, and provided me with a solid foundation for my career.</p>
+                    <h3>David Watson</h3>
+                    <i id="star" class="fa-solid fa-star"></i>
+                    <i id="star" class="fa-solid fa-star"></i>
+                    <i id="star" class="fa-solid fa-star"></i>
+                    <i id="star" class="fa-solid fa-star"></i>
+                    <i id="star" class="fa-solid fa-star-half-stroke"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!---------------- Call To Action ---------------->
+
+    <section class="cta">
+        <h1>Enroll For Our Various Online Courses <br>Anywhere From The World!</h1>
+        <a href="contact.html" class="hero-btn">CONTACT US</a>
+    </section>
+
+    <!---------- Footer ------------>
+
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>Explore "College Enquiry ChatBot" further by navigating through our diverse range of pages. Stay connected with us on social media for the latest updates and announcements.<br>For any inquiries or feedback, feel free to reach out to our dedicated support team at [enquirychatbot@gmail.com]. Your satisfaction is our priorty, and we're here to assist you every step of the way.</p>
+        <div class="icons">
+            <i id="icons" class="fa-brands fa-facebook"></i>
+            <i id="icons" class="fa-brands fa-twitter"></i>
+            <i id="icons" class="fa-brands fa-instagram"></i>
+            <i id="icons" class="fa-brands fa-linkedin"></i>
+        </div>
+        <p><i id="icons" class="fa-regular fa-copyright"></i> All copyrights are reseverd</p>
+    </section>
+
+    <!-- JavaScript for Toggle Menu -->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+
+
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="Chatbot/scripts/chat.js"></script>
+    <script src="Chatbot/scripts/responses.js"></script>
+</body>
+</html>
